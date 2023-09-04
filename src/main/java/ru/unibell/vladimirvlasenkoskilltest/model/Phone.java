@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**
- * Phone сущность содержит телефон клиента
+ * Phone сущность содержит телефоны клиента
  */
 
 @Entity

@@ -12,5 +12,5 @@ import java.util.List;
 @RepositoryRestResource
 public interface ClientRepository extends GenericRepository<Client> {
 
-    List<String> getEmailAndPhoneByClientId();
+    List<String> getEmailsAndPhonesByClientId();
 }

@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**
- * Email сущность содержит электронную почту клиента
+ * Email сущность содержит электронные почты клиента
  */
 
 @Entity
