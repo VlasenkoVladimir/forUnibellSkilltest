@@ -4,15 +4,15 @@ spring:
     username: user
     password: test
     driverClassName: org.h2.Driver
-  jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
-    hibernate:
-      ddl-auto: create-drop
-    show-sql: true
-  data:
-    rest:
-      basePath: /api/rest
-      defaultPageSize: 10
-      defaultMediaType: APPLICATION_JSON_VALUE
-      returnBodyOnCreate: true
-      returnBodyOnUpdate: true
+jpa:
+  database-platform: org.hibernate.dialect.H2Dialect
+  hibernate:
+    ddl-auto: create-drop
+  show-sql: true
+data:
+  rest:
+    basePath: /api/rest
+    defaultPageSize: 10
+    defaultMediaType: APPLICATION_JSON_VALUE
+    returnBodyOnCreate: true
+    returnBodyOnUpdate: true
