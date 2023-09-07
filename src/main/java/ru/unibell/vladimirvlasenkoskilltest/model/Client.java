@@ -6,7 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.List;
+import java.util.Set;
 
 /**
  * Клиентская сущность содержит поля контактных данных клиента
@@ -18,15 +18,13 @@ import java.util.List;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-@SequenceGenerator(name = "default_generator", sequenceName = "clients_seq", allocationSize = 1)
+@SequenceGenerator(name = "client_generator", sequenceName = "clients_seq", allocationSize = 1)
 public class Client extends GenericModel {
 
     @Column(name = "name", nullable = false)
     private String name;
 
-    @OneToMany(mappedBy = "email")
-    private List<String> emails;
-
-    @OneToMany(mappedBy = "phone")
-    private List<String> phones;
+    @Column(name = "contact_information")
+    @OneToMany(mappedBy = "client", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<ContactInformation> contactInformation;
 }

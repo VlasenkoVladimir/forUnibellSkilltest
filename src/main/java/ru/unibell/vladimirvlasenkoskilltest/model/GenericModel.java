@@ -1,9 +1,6 @@
 package ru.unibell.vladimirvlasenkoskilltest.model;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.MappedSuperclass;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -18,6 +15,7 @@ import lombok.Setter;
 @MappedSuperclass
 public abstract class GenericModel {
     @Id
+    @Column(name="id")
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "default_generator")
     private Long id;
 }
