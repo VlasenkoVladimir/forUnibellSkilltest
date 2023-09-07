@@ -12,11 +12,9 @@ import java.util.Set;
 @RepositoryRestResource
 public interface ContactInformationRepository extends GenericRepository<ContactInformation> {
 
-//    Set<String> getContactInformationByClientId();
+    Set<String> findContactInformationByClientId(Long clientId);
 
-//    Set<String> getContactInformationByClientIdWhereContactTypeIsEmail(Long id);
-//    Set<String> getEmailsByClientId(Long id);
+    Set<String> findEmailsByClientId(Long id);
 
-//    Set<String> getContactInformationByClientIdWhereContactTypeIsPhone(Long id);
-//    Set<String> getPhonesByClientId(Long id);
+    Set<String> findPhonesByClientId(Long id);
 }

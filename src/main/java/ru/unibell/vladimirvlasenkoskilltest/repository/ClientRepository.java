@@ -11,6 +11,4 @@ import java.util.Set;
 
 @RepositoryRestResource
 public interface ClientRepository extends GenericRepository<Client> {
-
-//    Set<String> getContactInformationByClientId();
 }
