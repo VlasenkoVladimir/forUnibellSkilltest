@@ -1,4 +1,11 @@
 spring:
+  data:
+    rest:
+      basePath: /api/rest
+      defaultPageSize: 10
+      defaultMediaType: application/json
+      returnBodyOnCreate: true
+      returnBodyOnUpdate: true
   datasource:
     url: jdbc:h2:mem:testDB
     username: user
@@ -9,10 +16,3 @@ jpa:
   hibernate:
     ddl-auto: create-drop
   show-sql: true
-data:
-  rest:
-    basePath: /api/rest/
-    defaultPageSize: 10
-    defaultMediaType: APPLICATION_JSON_VALUE
-    returnBodyOnCreate: true
-    returnBodyOnUpdate: true
