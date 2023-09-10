@@ -28,7 +28,7 @@ dependencies {
 
 	compileOnly 'org.projectlombok:lombok'
 
-	runtimeOnly 'com.h2database:h2:2.1.214.redhat-00001'
+	runtimeOnly 'com.h2database:h2:2.1.214'
 
 	annotationProcessor 'org.projectlombok:lombok'
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'

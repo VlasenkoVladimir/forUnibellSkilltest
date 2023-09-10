@@ -11,7 +11,7 @@ jpa:
   show-sql: true
 data:
   rest:
-    basePath: /api/rest
+    basePath: /api/rest/
     defaultPageSize: 10
     defaultMediaType: APPLICATION_JSON_VALUE
     returnBodyOnCreate: true

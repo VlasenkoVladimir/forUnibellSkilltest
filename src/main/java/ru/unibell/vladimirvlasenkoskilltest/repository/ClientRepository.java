@@ -10,5 +10,6 @@ import java.util.Set;
  */
 
 @RepositoryRestResource
+//@RepositoryRestResource(path = "/api/rest/Clients")
 public interface ClientRepository extends GenericRepository<Client> {
 }
