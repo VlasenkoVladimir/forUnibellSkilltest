@@ -6,8 +6,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Set;
-
 /**
  * Клиентская сущность содержит поля контактных данных клиента
  */
@@ -23,8 +21,4 @@ public class Client extends GenericModel {
 
     @Column(name = "name", nullable = false)
     private String name;
-
-    @Column(name = "contact_information")
-    @OneToMany(mappedBy = "client", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<ContactInformation> contactInformation;
 }
