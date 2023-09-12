@@ -10,8 +10,6 @@ import java.util.Set;
 
 public interface ContactInformationRepository extends GenericRepository<ContactInformation> {
 
-    Set<String> findContactInformationByClientId(Long clientId);
-
     Set<String> findEmailsByClientId(Long id);
 
     Set<String> findPhonesByClientId(Long id);
